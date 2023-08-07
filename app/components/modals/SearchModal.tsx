@@ -32,7 +32,7 @@ const SearchModal = () => {
 
     const Map = useMemo(()=> dynamic(()=> import("../Map"),{
         ssr:false
-    }),[location])
+    }),[])
 
     const onBack = useCallback(()=>{
         setSteps((value) => value -1);
